@@ -45,7 +45,12 @@ gulp.task('createPngCopy', ['createSprite'], function() {
     .pipe(gulp.dest('./app/temp/sprite/css'));
 });
 
-gulp.task('copySpriteCSS', ['createSPrite'], function() {
+gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
+  return gulp.src('./app/temp/sprite/css/**/*.{svg,png}')
+    .pipe(gulp.dest('./app/assets/images/sprites'));
+});
+
+gulp.task('copySpriteCSS', ['createSprite'], function() {
   return gulp.src('./app/temp/sprite/css/*.css')
     .pipe(rename('_sprite.css'))
     .pipe(gulp.dest('./app/assets/style/modules'));
