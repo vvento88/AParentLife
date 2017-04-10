@@ -18,8 +18,13 @@
     color: #000;
   }
 
-  /* Begin Styling Modifiers */
-  &--header {
+/* Begin Styling Modifiers */
+  &--pull-right {
+    right: 0;
+  }
+
+/* Begin Styling Elements */
+  &__header {
     display: inline-flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -52,21 +57,17 @@
     }
   }
 
-  &--pull-right {
-    right: 0;
-  }
-
-  &--logo {
+  &__logo {
     flex: 0 1 auto;
     justify-content: space-between;
   }
 
-  &--modal-icon {
+  &__modal-icon {
     flex: 2 2 auto;
     justify-content: space-between;
   }
 
-  &--landing {
+  &__landing {
     flex: 0 1 auto;
   }
 

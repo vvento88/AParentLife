@@ -558,7 +558,13 @@ main {
 
 /* Begin Styling Modifiers */
 
-.nav--header {
+.nav--pull-right {
+  right: 0;
+}
+
+/* Begin Styling Elements */
+
+.nav__header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -574,7 +580,7 @@ main {
           flex: 3 1 auto;
 }
 
-.nav--header a {
+.nav__header a {
   font-size: 1rem;
   padding: .375rem 1rem;
   margin-top: 2rem;
@@ -582,35 +588,31 @@ main {
 
 @media (min-width: 530px) {
 
-  .nav--header a {
+  .nav__header a {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1010px) {
 
-  .nav--header a {
+  .nav__header a {
     font-size: 3rem;
     padding: .75rem;
   }
 
-  .nav--header a:hover {
+  .nav__header a:hover {
     background-color: #567C73;
   }
 }
 
 @media (min-width: 530px) {
 
-  .nav--header li {
+  .nav__header li {
     padding-top: .75rem;
   }
 }
 
-.nav--pull-right {
-  right: 0;
-}
-
-.nav--logo {
+.nav__logo {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -619,7 +621,7 @@ main {
           justify-content: space-between;
 }
 
-.nav--modal-icon {
+.nav__modal-icon {
   -webkit-box-flex: 2;
       -ms-flex: 2 2 auto;
           flex: 2 2 auto;
@@ -628,7 +630,7 @@ main {
           justify-content: space-between;
 }
 
-.nav--landing {
+.nav__landing {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -688,4 +690,8 @@ main {
 .modal {
 
   
+}
+
+.content {
+  text-align: center;
 }
