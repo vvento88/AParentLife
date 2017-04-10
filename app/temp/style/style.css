@@ -426,9 +426,12 @@ template {
   display: none;
 }
 
-body {
+html,body {
   font-family: 'Roboto', sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #57534A;
 }
 
 img {
@@ -440,10 +443,25 @@ img {
   box-sizing: border-box;
 }
 
-section {
-  border: 1px solid #000;
-  padding: 1rem;
-  margin: 1rem;
+a {
+    text-decoration: none;
+}
+
+h1 {
+  color: #847545;
+  text-shadow: 0 3px 6px #000;
+  text-align: center;
+}
+
+main {
+  padding-top: 5em;
+}
+
+@media (min-width: 530px) {
+
+  main {
+    padding-top: 6em;
+  }
 }
 
 /* Do Not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -455,6 +473,11 @@ section {
 
 .no-svg .icon {
       background-image: url('/assets/images/sprites/sprite-0b871263.png');
+    }
+
+.icon--graphic {
+      display: inline-block;
+      text-indent: -9999px;
     }
 
 .icon--comment {
@@ -492,3 +515,177 @@ section {
     height: 62px;
     background-position: 0 0;
   }
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #486860;
+}
+
+.nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  color: #000;
+}
+
+/* Begin Styling Modifiers */
+
+.nav--header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+}
+
+.nav--header a {
+  font-size: 1rem;
+  padding: .375rem 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 530px) {
+
+  .nav--header a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .nav--header a {
+    font-size: 3rem;
+    padding: .75rem;
+  }
+
+  .nav--header a:hover {
+    background-color: #567C73;
+  }
+}
+
+@media (min-width: 530px) {
+
+  .nav--header li {
+    padding-top: .75rem;
+  }
+}
+
+.nav--pull-right {
+  right: 0;
+}
+
+.nav--logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav--modal-icon {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 auto;
+          flex: 2 2 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav--landing {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+/* ORDER STYLING FOR FLEX */
+
+.nav #logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.nav #modal {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 700px) {
+
+  .nav #modal {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.nav #landing {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 700px) {
+
+  .nav #landing {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.wrapper .wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal {
+
+  
+}

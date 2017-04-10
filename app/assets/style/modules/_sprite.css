@@ -9,11 +9,17 @@
       background-image: url('/assets/images/sprites/sprite-0b871263.png');
     }
 
+    .icon--graphic {
+      display: inline-block;
+      text-indent: -9999px;
+    }
+
   .icon--comment {
     width: 66px;
     height: 66px;
     background-position: 0 57.94392523364486%;
   }
+
 
   .icon--facebook {
     width: 23.23px;
@@ -21,11 +27,13 @@
     background-position: 83.16463314548339% 34.157686642375374%;
   }
 
+
   .icon--instagram {
     width: 44.01px;
     height: 44.01px;
     background-position: 0 99.23249864330568%;
   }
+
 
   .icon--mail {
     width: 66px;
@@ -33,14 +41,17 @@
     background-position: 47.142857142857146% 50.40650406504065%;
   }
 
+
   .icon--twitter {
     width: 53.78px;
     height: 44.06px;
     background-position: 99.85547234266194% 0;
   }
 
+
   .icon--vento-consulting-llc {
     width: 152px;
     height: 62px;
     background-position: 0 0;
   }
+

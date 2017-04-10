@@ -1,0 +1,93 @@
+.nav {
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #000;
+  }
+
+  /* Begin Styling Modifiers */
+  &--header {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex: 3 1 auto;
+
+    a {
+      font-size: 1rem;
+      padding: .375rem 1rem;
+      margin-top: 2rem;
+
+      @mixin atSmall {
+        font-size: 1.5rem;
+      }
+
+      @mixin atLarge {
+        font-size: 3rem;
+        padding: .75rem;
+
+        &:hover {
+          background-color: $lightGreen;
+        }
+      }
+    }
+
+    li {
+
+      @mixin atSmall {
+        padding-top: .75rem;
+      }
+    }
+  }
+
+  &--pull-right {
+    right: 0;
+  }
+
+  &--logo {
+    flex: 0 1 auto;
+    justify-content: space-between;
+  }
+
+  &--modal-icon {
+    flex: 2 2 auto;
+    justify-content: space-between;
+  }
+
+  &--landing {
+    flex: 0 1 auto;
+  }
+
+/* ORDER STYLING FOR FLEX */
+  #logo {
+    order: 1;
+  }
+
+  #modal {
+    order: 2;
+
+    @mixin atMedium {
+      order: 3;
+    }
+  }
+
+  #landing {
+    order: 3;
+
+    @mixin atMedium {
+      order: 2;
+    }
+  }
+}

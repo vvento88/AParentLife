@@ -22,58 +22,32 @@
 <body>
 
 <!-- HEADER -->
-  <header>
-    <div class="wrapper">
-      <div class="site-header__logo">
-        <div class="site-header__logo__graphic icon icon--vento-consulting-llc">
-          Vento Consulting LLC.
-        </div>
-      </div>
-
-      <!-- MAIN SITE NAV -->
-      <nav class="">
-        <ul>
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Develop</a></li>
-          <li><a href="#">Where do you Want to Go?</a></li>
-        </ul>
-      </nav>
-      <!-- END MAIN SITE NAV -->
-
-      <!-- MODAL SITE NAV -->
-      <section>
-        <nav class="">
-          <ul>
-            <li><a href="#">Discovered</a></li>
-            <li><a href="#">Designed</a></li>
-            <li><a href="#">Developed</a></li>
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">How to Reach Us</a></li>
-            <li><a href="#">What We've Done</a></li>
-            <li><a href="#">What We're Saying</a></li>
-            <li><a href="#">Discovery Checklist</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </nav>
-
-        <div class="">
-          <a href="#"><span class="icon icon--instagram"></span></a>
-          <a href="#"><span class="icon icon--twitter"></span></a>
-          <a href="#"><span class="icon icon--facebook"></span></a>
-        </div>
-
-        <div class="">X</div>
-      </section>
-      <!-- END MODAL SITE NAV -->
+  <header class="nav site-header wrapper">
+    <!-- MAIN SITE NAV -->
+    <div id="logo" class=" nav--logo icon icon--vento-consulting-llc icon--graphic">
+      Vento Consulting LLC.
     </div>
+
+    <div id="modal">
+      <a class="icon--graphic icon icon--comment nav--modal-icon" href="#">Where do you Want to Go?</a>
+    </div>
+
+    <nav id="landing" class="nav--pull-right">
+      <ul class="nav--header nav--landing">
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Develop</a></li>
+      </ul>
+    </nav>
+
+    <!-- END MAIN SITE NAV -->
   </header>
 <!-- END HEADER -->
 
 
 
   <!-- MAIN BODY -->
-  <main>
+  <main class="wrapper">
     <h1>YOUR VISION</h1>
 
     <section>
@@ -181,11 +155,37 @@
   </main>
   <!-- END MAIN BODY -->
 
+  <!-- MODAL SITE NAV -->
+  <section>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Discovered</a></li>
+        <li><a href="#">Designed</a></li>
+        <li><a href="#">Developed</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">How to Reach Us</a></li>
+        <li><a href="#">What We've Done</a></li>
+        <li><a href="#">What We're Saying</a></li>
+        <li><a href="#">Discovery Checklist</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="">
+      <a href="#"><span class="icon icon--instagram"></span></a>
+      <a href="#"><span class="icon icon--twitter"></span></a>
+      <a href="#"><span class="icon icon--facebook"></span></a>
+    </div>
+
+    <div class="">X</div>
+  </section>
+  <!-- END MODAL SITE NAV -->
+
 
   <!-- FOOTER -->
   <footer>
-    <div class="">
-      <nav class="">
+    <div class="wrapper">
+      <nav class="nav">
         <ul>
           <li><a href="#">Who We Are</a></li>
           <li><a href="#">How to Reach Us</a></li>
@@ -196,7 +196,7 @@
         </ul>
       </nav>
     </div>
-    
+
     <span>Copyright &copy; 2017 Vento Consulting LLC. All rights reserved.</span>
   </footer>
   <!-- END FOOTER -->
